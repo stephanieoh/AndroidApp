@@ -43,11 +43,14 @@ public class MainActivity extends Activity {
 		        Editable sam = tax.getText();
 		        String taxstring = sam.toString();
 		        Double priceVal;
-		        Double taxVal = 0.;
+		        Double taxVal;
 		        int multiplier = percent.getCheckedRadioButtonId();
+		        //taxVal = Double.parseDouble(taxstring);
 		        
 		        if (taxstring.equals("")){
 		        	taxVal = 0.;
+		        } else
+		        {
 		        	taxVal = Double.parseDouble(taxstring);
 		        }
 		        
